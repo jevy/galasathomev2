@@ -8,6 +8,13 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+# Assets Directories
+
+set :images_dir, 'assets/images'
+set :css_dir,    'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
+set :fonts_dir,  'assets/fonts'
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
