@@ -1,3 +1,6 @@
+# TODO: keep this only until this is fixed https://github.com/middleman/middleman/issues/2312
+require 'middleman-2312-patch'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
