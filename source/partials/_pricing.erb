@@ -6,85 +6,31 @@
     </div>
     <div class="row">
 
-      <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">
-        <div class="pricing-box">
-          <div class="pricing-title">
-            <h5 class="alt-title">Professional Livestream Management</h5>
-            <h6 class="alt-title">Peace of mind for livestreaming your event</h5>
-          </div>
-          <div class="pricing-price">
-            <p>
-              <span class="pricing-price-lg">$3000</span>
-            </p>
-          </div>
-          <div class="pricing-features">
-            <ul>
-              <li>Best practices consulting call</li>
-              <li>Up to 5 speakers and 3 pre-recorded videos</li>
-              <li>60 Minute Max</li>
-              <li>1 Dry-Run</li>
-            </ul>
-          </div>
-          <div class="pricing-button">
-            <a target="_blank" href="https://calendly.com/jevin/galas-at-home-exploration" class="btn btn-md btn-color-outline"><i class="fa fa-user left"></i>Free Exploration Call</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
-        <div class="pricing-box">
-          <div class="pricing-title">
-            <h5 class="alt-title">Premium Livestream Management</h5>
-            <h6 class="alt-title">For those looking for a highly polished, interactive and personal experience </h5>
-          </div>
-          <div class="pricing-price">
-            <p>
-              <span class="pricing-price-lg">$5000</span>
-            </p>
-          </div>
-          <div class="pricing-features">
-            <ul>
-              <li>Dedicated Event Producer</li>
-              <li>Unlimited videos and speakers</li>
-              <li>60 Minute Max</li>
-              <li>Up to 3 dry-runs</li>
-              <li>Slides creation</li>
-              <li>Consulting with every speaker to optimize their video, audio, and lighting</li>
-            </ul>
-          </div>
-          <div class="pricing-button">
-            <a target="_blank" href="https://calendly.com/jevin/galas-at-home-exploration" class="btn btn-md btn-color-outline"><i class="fa fa-user left"></i>Free Exploration Call</a>
+      <% data.pricing.each_with_index do |entry, idx| %>
+        <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.<%= idx + 1 %>s">
+          <div class="pricing-box">
+            <div class="pricing-title">
+              <h5 class="alt-title"><%= entry.title %></h5>
+              <h6 class="alt-title"><%= entry.subtitle %></h5>
+            </div>
+            <div class="pricing-price">
+              <p>
+                <span class="pricing-price-lg"><%= entry.cost %></span>
+              </p>
+            </div>
+            <div class="pricing-features">
+              <ul>
+                <% entry.features.each do |feature| %>
+                  <li><%= feature %></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="pricing-button">
+              <a target="_blank" href="<%= entry.link %>" class="btn btn-md btn-color-outline"><i class="fa fa-user left"></i>Free Exploration Call</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-        <div class="pricing-box">
-          <div class="pricing-title">
-            <h5 class="alt-title">Livestream and Giving Management</h5>
-            <h6 class="alt-title">For a turn-key solution. You just focus on marketing the event.</h5>
-          </div>
-          <div class="pricing-price">
-            <p>
-              <span class="pricing-price-lg">$7500</span>
-            </p>
-          </div>
-          <div class="pricing-features">
-            <ul>
-              <li>Everything in "Premium Livestream Management" plus</li>
-              <li>Tech Support during the event</li>
-              <li>Registration setup/management</li>
-              <li>Event Website</li>
-              <li>Auctria License</li>
-              <li>Text to register and give</li>
-              <li>Live Auction and Paddle Raise management</li>
-            </ul>
-          </div>
-          <div class="pricing-button">
-            <a target="_blank" href="https://calendly.com/jevin/galas-at-home-exploration" class="btn btn-md btn-color-outline"><i class="fa fa-user left"></i>Free Exploration Call</a>
-          </div>
-        </div>
-      </div>
+      <% end %>
 
     </div>
     <div class="rows mt-30">Have a question?, Please contact for more information. <a class="scroll-down color" href="#contact-us"><b>Contact us</b></a></div>
