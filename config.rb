@@ -8,6 +8,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+activate :livereload
+
 # Assets Directories
 
 set :images_dir, 'assets/images'
