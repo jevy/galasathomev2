@@ -12,6 +12,7 @@
         },
         submitHandler: function (form) {
             //$(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+            /*
             $(form).ajaxSubmit({
                 target: '#subscribe-result',
                 success: function () {
@@ -21,6 +22,7 @@
                     SEMICOLON.widget.notifications($('#subscribe-result'));
                 }
             });
+            */
         }
     });
 
