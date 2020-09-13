@@ -4752,16 +4752,13 @@ a.badge:focus, a.badge:hover {
 }
 
 @-o-keyframes progress-bar-stripes {
-    from;
+    from {
+        background-position: 1rem 0;
+    }
 
-{
-    background-position: 1rem 0;
-}
-
-to {
-    background-position: 0 0;
-}
-
+    to {
+        background-position: 0 0;
+    }
 }
 
 @keyframes progress-bar-stripes {
@@ -5580,9 +5577,7 @@ button.close {
 }
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
-    .carousel-item;
-
-{
+    .carousel-item {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     -o-transition: -o-transform 0.6s ease-in-out;
@@ -5632,9 +5627,7 @@ button.close {
 }
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
-    .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right;
-
-{
+    .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
