@@ -14,6 +14,7 @@ activate :blog do |blog|
   blog.sources = 'best_practices/:title.html'
   blog.default_extension = '.md'
   blog.summary_separator = /(READMORE)/
+  blog.layout = 'best_practices_article'
 end
 
 activate :directory_indexes
