@@ -1,5 +1,6 @@
 ---
 title: Fundraising Event Planning Options in Late 2020 or Early 2021
+author: Jevin
 date: 2020-07-08
 ---
 

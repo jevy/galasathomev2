@@ -1,5 +1,6 @@
 ---
 title: Auctioneer Studio Setup At Home
+author: Jevin
 date: 2020-05-04
 ---
 

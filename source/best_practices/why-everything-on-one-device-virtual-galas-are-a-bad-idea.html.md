@@ -1,5 +1,6 @@
 ---
 title: Why "Everything on One Device" Virtual Galas Are A Bad idea
+author: Jevin
 date: 2020-05-08
 ---
 
