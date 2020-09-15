@@ -8,6 +8,14 @@ activate :autoprefixer do |prefix|
   prefix.browsers = 'last 2 versions'
 end
 
+activate :blog do |blog|
+  blog.name = 'best_practices'
+  blog.permalink = 'best-practices/:title.html'
+  blog.sources = 'best_practices/:title.html'
+  blog.default_extension = '.md'
+end
+
+activate :directory_indexes
 activate :livereload
 
 # Assets Directories
