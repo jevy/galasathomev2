@@ -6,6 +6,8 @@ date: 2020-05-04
 
 Auctioneers are used to having a stage, jumping down into the audience, and feeding off their energy. In the current "Virtual Gala" climate, we need creative ways to do that.
 
+READMORE
+
 Getting a stage might FEEL it’s important, but I’m a big believer in the 80/20 rule (“Pareto Principle”). You don’t need a studio setup at all, you can look and sound great at home.
 
 One major point to note is you don’t need to have everything at once and some things won’t work for your setup. This is an **iterative process**. Do some research, buy some things and return what you don’t like. Like with most things in life, it’s rare you’ll get it right on the first try.

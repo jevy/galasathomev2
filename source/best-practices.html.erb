@@ -17,80 +17,26 @@ title: Galas At Home - Virtual Fundraising Production Company
   <div class="container">
     <div class="row">
 
-      <!--Post Col-->
+    <% blog('best_practices').articles.each do |article| %>
       <div class="col-md-4 col-sm-6 mb-45">
-        <!-- Post -->
         <div class="blog-post">
           <div class="post-media">
             <%= image_tag 'intro-bg.jpg' %>
           </div>
           <div class="post-meta">
-            <span>by <a>John Doe</a>,</span>
-            <span class="post-date">06 Jan 2016</span>
+            <span>by <%= article.data.author %>,</span>
+            <span class="post-date"><%= article.date.strftime('%d %b %Y') %></span>
           </div>
           <div class="post-header">
-            <h4 class="alt-title"><a href="page-blog_single.html">We denounce with righteous the indignation and dislike</a></h4>
+            <h4 class="alt-title"><%= link_to article.title, article %></h4>
           </div>
           <div class="post-entry">
-            <p>Luctus pulvinar, hendrerit id, Maecenas tempus, tellus eget lorem. Maecenas nec odio et is ante.</p>
-          </div>
-          <div class="post-tag">
-            <span><a href="#">Branding</a></span>
-            <span><a href="#">Design</a></span>
+            <p><%= strip_tags(article.summary) %></p>
           </div>
         </div>
-        <!-- End Post -->
       </div>
+    <% end %>
 
-      <!--Post Col-->
-      <div class="col-md-4 col-sm-6 mb-45">
-        <!-- Post -->
-        <div class="blog-post">
-          <div class="post-media">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8uZ98Pa3bPE" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="post-meta">
-            <span>by <a>John Doe</a>,</span>
-            <span class="post-date">06 Jan 2016</span>
-          </div>
-          <div class="post-header">
-            <h4 class="alt-title"><a href="page-blog_single.html">We denounce with righteous the indignation and dislike</a></h4>
-          </div>
-          <div class="post-entry">
-            <p>Luctus pulvinar, hendrerit id, Maecenas tempus, tellus eget lorem. Maecenas nec odio et is ante.</p>
-          </div>
-          <div class="post-tag">
-            <span><a href="#">Branding</a></span>
-            <span><a href="#">Design</a></span>
-          </div>
-        </div>
-        <!-- End Post -->
-      </div>
-
-      <!--Post Col-->
-      <div class="col-md-4 col-sm-6 mb-30">
-          <!-- Post -->
-        <div class="blog-post">
-          <div class="post-media">
-            <iframe src="https://player.vimeo.com/video/81336102?title=0&byline=0&portrait=0&color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="post-meta">
-            <span>by <a>John Doe</a>,</span>
-            <span class="post-date">06 Jan 2016</span>
-          </div>
-          <div class="post-header">
-            <h4 class="alt-title"><a href="page-blog_single.html">We denounce with righteous the indignation and dislike</a></h4>
-          </div>
-          <div class="post-entry">
-            <p>Luctus pulvinar, hendrerit id, Maecenas tempus, tellus eget lorem. Maecenas nec odio et is ante.</p>
-          </div>
-          <div class="post-tag">
-            <span><a href="#">Branding</a></span>
-            <span><a href="#">Design</a></span>
-          </div>
-        </div>
-        <!-- End Post -->
-      </div>
     </div>
   </div>
 </section>

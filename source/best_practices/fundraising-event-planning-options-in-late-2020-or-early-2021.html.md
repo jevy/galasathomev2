@@ -6,6 +6,8 @@ date: 2020-07-08
 
 We are talking to organizations every day about putting on virtual galas/fundraisers and almost every single one asks: What is everyone else doing for the fall or winter 2021 events.
 
+READMORE
+
 **Full disclosure of bias:** We run virtual events for non-profits that raise as much or more than previous years while doing it online, so we think they are a great thing. That said, the reality is in-person events are really fun and people want to connect and we encourage that when it's safe to do so.
 
 There are two pieces to consider if planning for an in-person vs. virtual event:

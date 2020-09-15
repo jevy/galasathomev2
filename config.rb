@@ -1,5 +1,5 @@
 # TODO: keep this only until this is fixed https://github.com/middleman/middleman/issues/2312
-require 'middleman-2312-patch'
+require 'lib/middleman_2312_patch'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -13,6 +13,7 @@ activate :blog do |blog|
   blog.permalink = 'best-practices/:title.html'
   blog.sources = 'best_practices/:title.html'
   blog.default_extension = '.md'
+  blog.summary_separator = /(READMORE)/
 end
 
 activate :directory_indexes

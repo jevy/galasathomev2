@@ -8,6 +8,8 @@ Imagine walking into a benefit auction and while you are registering, the regist
 
 __"Welcome to our event! Could you please hand me your phone for the duration of the event"__
 
+READMORE
+
 Would you hand over your phone?
 
 **Of course you wouldn't**
